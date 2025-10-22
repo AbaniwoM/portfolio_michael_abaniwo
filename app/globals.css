@@ -1,0 +1,295 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--color-gray-900);
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 320px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .partners {
+    margin-top: 2rem;
+  }
+  .partnerImage {
+    width: 8.5rem;
+  }
+  .partnerCover {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .techImage {
+    width: 8rem;
+    height: 5rem;
+  }
+  .techContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2rem;
+  }
+  .contactForm {
+    min-width: 18rem;
+  }
+  .techHeader {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+  }
+  .techText {
+    font-size: 1rem;
+    width: 17rem;
+  }
+  .techCenter {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroText {
+    font-size: 1.9rem;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .teamCard {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .teamWidth {
+    width: 16.8rem;
+  }
+  .prjCard {
+    min-width: 15.3rem;
+  }
+  .prjPad {
+    padding: 0.8rem;
+  }
+  .skillPad {
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .prjBtm {
+    margin-bottom: 1rem;
+  }
+  .closeBtn {
+    color: white;
+    z-index: 60;
+    margin-left: -6.5rem;
+  }
+  .footerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footerBtm {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .partners {
+    margin-top: 2rem;
+  }
+  .techImage {
+    width: 10rem;
+    height: 5.4rem;
+  }
+  .techContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2rem;
+  }
+  .contactForm {
+    min-width: 21rem;
+  }
+  .techHeader {
+    font-size: 1.8rem;
+    margin-top: -1rem;
+  }
+  .techText {
+    font-size: 1rem;
+    width: 21rem;
+  }
+  .techCenter {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroText {
+    font-size: 2.2rem;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .teamCard {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .teamWidth {
+    width: 20.2rem;
+  }
+  .prjCard {
+    min-width: 18.8rem;
+  }
+  .closeBtn {
+    color: white;
+    z-index: 60;
+    margin-left: -3rem;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .techImage {
+    width: 10.5rem;
+    height: 6rem;
+  }
+  .techContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2rem;
+  }
+  .contactForm {
+    min-width: 24rem;
+  }
+  .techHeader {
+    font-size: 2rem;
+  }
+  .techText {
+    font-size: 1rem;
+    width: 22rem;
+  }
+  .techCenter {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroText {
+    font-size: 2.5rem;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .teamCard {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .teamWidth {
+    width: 23.2rem;
+  }
+  .prjCard {
+    min-width: 21rem;
+  }
+  .closeBtn {
+    color: white;
+    z-index: 60;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .techImage {
+    width: 14.8rem;
+    height: 6.2rem;
+  }
+  .techContent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contactForm {
+    min-width: 42rem;
+  }
+  .techHead {
+    font-size: 2.5rem;
+  }
+  .techHeader {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .techText {
+    font-size: 1rem;
+    width: 30rem;
+  }
+  .techCenter {
+    display: flex;
+    flex-direction: column;
+  }
+  .heroText {
+    font-size: 3rem;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .teamCard {
+    margin-top: 3.5rem;
+    display: flex;
+  }
+  .teamWidth {
+    width: 22rem;
+  }
+  .prjCard {
+    min-width: 21rem;
+  }
+  .closeBtn {
+    color: white;
+    z-index: 60;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .techImage {
+    width: 8rem;
+    height: 5rem;
+  }
+  .contactForm {
+    min-width: 28rem;
+  }
+}
