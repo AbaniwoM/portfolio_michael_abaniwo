@@ -84,7 +84,7 @@ body {
     margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2.2rem;
   }
   .teamWidth {
     width: 16.8rem;
@@ -163,6 +163,7 @@ body {
     margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
   }
   .teamWidth {
     width: 20.2rem;
@@ -216,6 +217,7 @@ body {
     margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
   }
   .teamWidth {
     width: 23.2rem;

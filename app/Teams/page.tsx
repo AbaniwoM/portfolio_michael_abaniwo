@@ -5,7 +5,7 @@ const Teams = () => {
   return (
     <div className="teamContent flex flex-col p-6 mt-22">
         <div>
-            <h2 className='techHead text-[3rem] text-green-400'>Clients I have worked for</h2>
+            <h2 className='techHeader text-[3rem] text-green-400'>Clients I have worked for</h2>
         </div>
         <div className="teamCard flex mt-18 gap-5 overflow-x-auto hide-scrollbar">
             <TeamsCard 

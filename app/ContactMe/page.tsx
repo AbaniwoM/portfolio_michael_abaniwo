@@ -8,7 +8,7 @@ const ContactMe = () => {
   return (
     <div className='contactMe flex justify-between p-6 mt-25'>
         <div className='flex flex-col gap-5'>
-            <h2 className='techHead text-[3rem] text-green-400'>Get in touch</h2>
+            <h2 className='techHeader text-[3rem] text-green-400'>Get in touch</h2>
             <p className='techText text-[1.2rem] w-120 text-gray-300'>Drop me a line, give me a call, or send me a message by submitting the form.</p>
             <div className='flex flex-col gap-3'>
                 <div className='flex gap-3 items-center'>

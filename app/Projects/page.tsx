@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className='techContent flex flex-col p-6 mt-22'>
         <div className='flex flex-col gap-5'>
-            <h2 className='techHead text-[3rem] text-green-400'>Selected Projects</h2>
+            <h2 className='techHeader text-[3rem] text-green-400'>Selected Projects</h2>
             <p className='techText text-[1.2rem] w-120 text-gray-300'>Here are some of my lastest projects. Carefully built with ReactJs (NextJs), React-vite, Typescript and a number of technologies.</p>
         </div>
         <div className='projects flex mt-22 gap-5 overflow-x-auto hide-scrollbar'>
