@@ -108,6 +108,11 @@ body {
     color: white;
     z-index: 60;
     margin-left: -6.5rem;
+    position: fixed;
+  }
+  .hamNav {
+    position: fixed;
+    overflow-y: hidden;
   }
   .footerTop {
     display: flex;
@@ -175,6 +180,11 @@ body {
     color: white;
     z-index: 60;
     margin-left: -3rem;
+    position: fixed;
+  }
+  .hamNav {
+    position: fixed;
+    overflow-y: hidden;
   }
 }
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -228,6 +238,11 @@ body {
   .closeBtn {
     color: white;
     z-index: 60;
+    position: fixed;
+  }
+  .hamNav {
+    position: fixed;
+    overflow-y: hidden;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {

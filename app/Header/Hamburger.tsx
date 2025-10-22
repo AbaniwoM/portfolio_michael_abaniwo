@@ -41,7 +41,7 @@ const Hamburger = () => {
 
         {/* mobile nav */}
         <nav
-          className={`bg-gray-900 text-white text-center flex items-center justify-center h-full fixed overflow-y-auto top-0 w-full md:w-full sm:flex sm:items-center sm:justify-center sm:text-center md:flex md:items-center md:justify-center md:text-center sm:z-40 md:z-40 hamBg z-50 duration-1000 ${
+          className={`hamNav bg-gray-900 text-white text-center flex items-center justify-center h-full fixed overflow-y-hidden top-0 w-full md:w-full sm:flex sm:items-center sm:justify-center sm:text-center md:flex md:items-center md:justify-center md:text-center sm:z-40 md:z-40 hamBg z-50 duration-1000 ${
             nav ? "left-0" : "left-[-180vw]"
           } `}
         >
