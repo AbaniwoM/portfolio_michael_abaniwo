@@ -27,7 +27,7 @@ const Hamburger = () => {
         {nav ? (
           // close button
           <i
-            className="fixed text-white left-93 -mt-4 text-3xl closeBtn cursor-pointer"
+            className="absolute text-white left-93 -mt-4 text-3xl closeBtn cursor-pointer"
             aria-hidden="true"
             onClick={showNav}
           ><LiaTimesSolid /></i>
