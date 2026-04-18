@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { FaChevronRight } from "react-icons/fa";
 
 type CardProps = {
@@ -19,7 +18,7 @@ export default function TeamsCard({ image, description, linkOne, text }: CardPro
       <Image src={image} alt={text} width={150} height={150} className="w-40 h-20 rounded-lg" />
       <p className="text-[1rem] text-gray-400">{description}</p>
       <div className='flex justify-between text-white mt-4'>
-        <Link href={linkOne} className='flex items-center gap-2 cursor-pointer'>View project <FaChevronRight /></Link>
+        <Link href={linkOne} target="_blank" rel="noopener noreferrer" className='flex items-center gap-2 cursor-pointer'>View project <FaChevronRight /></Link>
       </div>
       </div>
     </div>

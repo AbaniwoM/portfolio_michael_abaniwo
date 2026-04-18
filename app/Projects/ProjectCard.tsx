@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import { FaChevronRight } from "react-icons/fa";
 
 type CardProps = {
@@ -30,8 +29,8 @@ export default function ProjectCard({ title, image, description, skillOne, skill
         <div className='skillPad bg-green-400 text-black p-2 rounded-md'>{skillThree}</div>
       </div>
       <div className='prjBtm flex justify-between text-white mt-4'>
-        <Link href={linkOne} className='flex items-center gap-2 cursor-pointer'>View project <FaChevronRight /></Link>
-        <Link href={linkTwo} className='flex items-center gap-2 cursor-pointer'>View code <FaChevronRight /></Link>
+        <Link href={linkOne} target="_blank" rel="noopener noreferrer" className='flex items-center gap-2 cursor-pointer'>View project <FaChevronRight /></Link>
+        <Link href={linkTwo} target="_blank" rel="noopener noreferrer" className='flex items-center gap-2 cursor-pointer'>View code <FaChevronRight /></Link>
       </div>
       </div>
     </div>
