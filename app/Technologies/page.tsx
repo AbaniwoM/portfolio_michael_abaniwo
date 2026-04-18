@@ -4,6 +4,7 @@ import reactImg from '../../public/reactjs.png'
 import typescriptImg from '../../public/typescript.png'
 import tailwindcssImg from '../../public/tailwindcss.png'
 import sanityImg from '../../public/sanity.png'
+import nextImg from '../../public/next.png'
 
 const Technologies = () => {
   return (
@@ -15,11 +16,14 @@ const Technologies = () => {
         <div className='flex flex-col gap-5'>
           <div className='flex gap-5'>
             <Image src={reactImg} alt='react-img' className='techImage w-68 h-32' />
-            <Image src={typescriptImg} alt='typescript-img' className='techImage w-68 h-32' />
+            <Image src={nextImg} alt='next-img' className='techImage w-68 h-32' />
           </div>
           <div className='flex gap-5'>
+          <Image src={typescriptImg} alt='typescript-img' className='techImage w-68 h-32' />
             <Image src={tailwindcssImg} alt='tailwindcss-img' className='techImage w-68 h-32' />
-            <Image src={sanityImg} alt='react-img' className='techImage w-68 h-32' />
+          </div>
+          <div className='flex gap-5'>
+          <Image src={sanityImg} alt='react-img' className='techImage w-68 h-32' />
           </div>
         </div>
     </div>

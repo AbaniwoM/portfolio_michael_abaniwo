@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className='border-b-gray-300 border-b-[0.05rem] ml-6 mr-6'></div>
         <div className='footerBtm flex flex-col justify-center items-center mt-7 gap-1 mb-12'>
-            <h2>&copy; 2025. All rights reserved.</h2>
+            <h2>&copy; 2026. All rights reserved.</h2>
             <p className='italic'>Bringing you code with a touch from Heaven!</p>
         </div>
     </div>

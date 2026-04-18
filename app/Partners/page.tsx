@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import proddly from '../../public/proddly.png'
+import meava from '../../public/meava.jpeg'
 import reveriesandknight from '../../public/reveries&knight.jpg'
 
 const Partners = () => {
@@ -10,6 +11,7 @@ const Partners = () => {
         <div className='partnerCover flex gap-8'>
             <Image src={proddly} alt="proddly" className='partnerImage w-40 h-20 rounded-lg' />
             <Image src={reveriesandknight} alt="reveriesandknight" className='w-40 h-20 rounded-lg' />
+            <Image src={meava} alt="meava" className='w-40 h-20 rounded-lg' />
         </div>
     </div>
   )

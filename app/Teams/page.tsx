@@ -11,7 +11,7 @@ const Teams = () => {
             <TeamsCard 
                 image="/proddly.png"
                 description="Built the learn module of the proddly application that gives users access to materials in different learning stacks."
-                linkOne="https://proddly-creators-app.netlify.app/"
+                linkOne="https://learn.proddly.com/learn/proddly-guides"
                 text="proddly"         
             /> 
             <TeamsCard 
@@ -19,6 +19,12 @@ const Teams = () => {
                 description="Built the Reveries & Knight Law firm website with nextjs and modern technologies."
                 linkOne="https://reveriesandknight.com"
                 text="reveries-and-knight"         
+            /> 
+            <TeamsCard 
+                image="/meava.jpeg"
+                description="Fashion Designer."
+                linkOne="https://fashion-design-solution.netlify.app"
+                text="meava-couture"         
             /> 
         </div>
     </div>
