@@ -12,20 +12,30 @@ const Teams = () => {
                 image="/proddly.png"
                 description="Built the learn module of the proddly application that gives users access to materials in different learning stacks."
                 linkOne="https://learn.proddly.com/learn/proddly-guides"
-                text="proddly"         
+                text="proddly" 
+                imgClassName="w-16 h-16 object-contain md:w-40 md:h-30"        
             /> 
             <TeamsCard 
                 image="/reveries&knight.jpg"
                 description="Built the Reveries & Knight Law firm website with nextjs and modern technologies."
                 linkOne="https://reveriesandknight.com"
-                text="reveries-and-knight"         
+                text="reveries-and-knight" 
+                imgClassName="w-16 h-16 object-contain md:w-40 md:h-30"        
             /> 
             <TeamsCard 
                 image="/meava.jpeg"
                 description="Fashion Designer."
                 linkOne="https://fashion-design-solution.netlify.app"
-                text="meava-couture"         
+                text="meava-couture"
+                imgClassName="w-16 h-16 object-contain md:w-40 md:h-30"         
             /> 
+            <TeamsCard 
+                image="/logo.png"
+                description="Great Grace Collection."
+                linkOne="https://great-grace-collection.netlify.app/"
+                text="great-grace-collection"      
+                imgClassName="w-16 h-16 object-contain md:w-24 md:h-24"                 
+            />
         </div>
     </div>
   )

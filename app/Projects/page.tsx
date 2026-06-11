@@ -10,6 +10,17 @@ const Projects = () => {
         </div>
         <div className='projects flex mt-22 gap-5 overflow-x-auto hide-scrollbar'>
             <ProjectCard 
+                image="/grace.png"
+                title="Great Grace Collections App"
+                description="E-commerce business website for online shopping and payments."
+                skillOne="ReactJs"
+                skillTwo="NextJs"
+                skillThree="TypeScript"
+                linkOne="https://great-grace-collection.netlify.app/"
+                linkTwo="https://github.com/AbaniwoM/great-grace-collections"  
+                text="e-commerce"         
+            />
+            <ProjectCard 
                 image="/fashion.png"
                 title="Fashion Design Solution App"
                 description="Industry-standard financial and measurement management for fashion designers."

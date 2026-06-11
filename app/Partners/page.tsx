@@ -3,6 +3,8 @@ import React from 'react'
 import proddly from '../../public/proddly.png'
 import meava from '../../public/meava.jpeg'
 import reveriesandknight from '../../public/reveries&knight.jpg'
+import greatGraceCollection from '../../public/logo.png'
+
 
 const Partners = () => {
   return (
@@ -12,6 +14,7 @@ const Partners = () => {
             <Image src={proddly} alt="proddly" className='partnerImage w-40 h-20 rounded-lg' />
             <Image src={reveriesandknight} alt="reveriesandknight" className='w-40 h-20 rounded-lg' />
             <Image src={meava} alt="meava" className='w-40 h-20 rounded-lg' />
+            <Image src={greatGraceCollection} alt="greatgracecollection" className='w-20 h-20 rounded-lg' />
         </div>
     </div>
   )
