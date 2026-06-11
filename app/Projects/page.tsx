@@ -5,10 +5,14 @@ const Projects = () => {
   return (
     <div className='techContent flex flex-col p-6 mt-22'>
         <div className='flex flex-col gap-5'>
-            <h2 className='techHeader text-[3rem] text-green-400'>Selected Projects</h2>
-            <p className='techText text-[1.2rem] w-120 text-gray-300'>Here are some of my lastest projects. Carefully built with ReactJs (NextJs), React-vite, Typescript and a number of technologies.</p>
+            <h2 className='techHeader text-[3rem] font-display font-extrabold text-slate-100 tracking-tight leading-tight'>
+              Selected <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
+            </h2>
+            <p className='techText text-[1.1rem] leading-relaxed w-120 text-slate-400'>
+              Here are some of my latest projects. Carefully built with ReactJs (NextJs), React-vite, Typescript and a number of modern technologies.
+            </p>
         </div>
-        <div className='projects flex mt-22 gap-5 overflow-x-auto hide-scrollbar'>
+        <div className='projects flex mt-16 gap-6 overflow-x-auto pb-4 hide-scrollbar'>
             <ProjectCard 
                 image="/grace.png"
                 title="Great Grace Collections App"

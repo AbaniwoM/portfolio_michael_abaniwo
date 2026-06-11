@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { FaPhoneAlt } from 'react-icons/fa'; // Importing a phone icon
 
 // Define the props for the component
 interface CallablePhoneNumberProps {
@@ -17,7 +16,7 @@ const CallablePhoneNumber: FC<CallablePhoneNumberProps> = ({ phoneNumber, classN
   return (
     <a 
       href={callableNumber} 
-      className={`inline-flex items-center space-x-2 text-blue-500 hover:text-blue-700 transition-colors duration-300 cursor-pointer ${className}`}
+      className={`inline-flex items-center space-x-2 transition-colors duration-300 cursor-pointer ${className}`}
     >
       <span>{phoneNumber}</span>
     </a>

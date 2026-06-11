@@ -43,11 +43,11 @@ const ContactForm: FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-140 bg-black">
-      <div className="contactForm min-w-140 max-w-md p-8 space-y-6">
+    <div className="flex items-center justify-center min-h-140 bg-transparent">
+      <div className="contactForm min-w-140 max-w-md p-8 space-y-6 bg-slate-900/20 backdrop-blur-md border border-slate-800/60 rounded-2xl shadow-xl shadow-slate-950/30">
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label htmlFor="name" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="name" className="block mb-2 text-xs uppercase tracking-wider font-semibold text-slate-400">
               Name
             </label>
             <input
@@ -56,12 +56,13 @@ const ContactForm: FC = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="block w-full p-2.5 bg-transparent border-2 border-green-500 rounded-lg shadow-[0_0_10px_#00ff00] focus:ring-green-400 focus:border-green-400 focus:outline-none text-white transition-shadow duration-300 ease-in-out"
+              placeholder="Your Name"
+              className="block w-full p-3 bg-slate-950/40 border border-slate-800/60 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 focus:outline-none text-white placeholder-slate-600 transition-all duration-300 ease-in-out shadow-inner"
               required
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="email" className="block mb-2 text-xs uppercase tracking-wider font-semibold text-slate-400">
               Email
             </label>
             <input
@@ -70,12 +71,13 @@ const ContactForm: FC = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="block w-full p-2.5 bg-transparent border-2 border-green-500 rounded-lg shadow-[0_0_10px_#00ff00] focus:ring-green-400 focus:border-green-400 focus:outline-none text-white transition-shadow duration-300 ease-in-out"
+              placeholder="your.email@example.com"
+              className="block w-full p-3 bg-slate-950/40 border border-slate-800/60 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 focus:outline-none text-white placeholder-slate-600 transition-all duration-300 ease-in-out shadow-inner"
               required
             />
           </div>
           <div className="mb-6">
-            <label htmlFor="message" className="block mb-2 text-sm font-medium text-white">
+            <label htmlFor="message" className="block mb-2 text-xs uppercase tracking-wider font-semibold text-slate-400">
               Message
             </label>
             <textarea
@@ -84,15 +86,16 @@ const ContactForm: FC = () => {
               rows={5}
               value={formData.message}
               onChange={handleChange}
-              className="block w-full p-2.5 bg-transparent border-2 border-green-500 rounded-lg shadow-[0_0_10px_#00ff00] focus:ring-green-400 focus:border-green-400 focus:outline-none text-white transition-shadow duration-300 ease-in-out"
+              placeholder="Write your message here..."
+              className="block w-full p-3 bg-slate-950/40 border border-slate-800/60 rounded-xl focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/10 focus:outline-none text-white placeholder-slate-600 transition-all duration-300 ease-in-out shadow-inner resize-none"
               required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="px-5 py-2.5 font-bold text-black bg-white rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-colors duration-300 ease-in-out cursor-pointer"
+            className="w-full px-5 py-3.5 font-bold text-slate-950 bg-emerald-400 hover:bg-emerald-300 rounded-xl shadow-lg shadow-emerald-500/10 hover:shadow-emerald-400/20 hover:-translate-y-0.5 transition-all duration-300 focus:outline-none cursor-pointer text-sm"
           >
-            Submit
+            Send Message
           </button>
         </form>
       </div>
