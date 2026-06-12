@@ -31,7 +31,7 @@ const testimonials: Testimonial[] = [
   {
     image: "/meava.jpeg",
     name: "Meava Couture",
-    description: "Designed and implemented industry-standard financial and measurement management systems for fashion designers.",
+    description: "Excellent work Michael! The application has made running my business much easier. I can calculate costs, generate receipts, and manage transactions seamlessly. It helped with my branding strategy for 2026. Thank you for your professionalism, responsiveness, and attention to detail. I highly recommend your services.",
     link: "https://fashion-design-solution.netlify.app",
     imgClassName: "w-28 h-28 object-contain rounded-xl"
   },
