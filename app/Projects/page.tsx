@@ -6,13 +6,24 @@ const Projects = () => {
     <div className='techContent flex flex-col p-6 mt-22'>
         <div className='flex flex-col gap-5'>
             <h2 className='techHeader text-[3rem] font-display font-extrabold text-slate-100 tracking-tight leading-tight'>
-              Selected <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
+              Selected <span className="bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
             </h2>
             <p className='techText text-[1.1rem] leading-relaxed w-120 text-slate-400'>
               Here are some of my latest projects. Carefully built with ReactJs (NextJs), React-vite, Typescript and a number of modern technologies.
             </p>
         </div>
         <div className='projects flex mt-16 gap-6 overflow-x-auto pb-4 hide-scrollbar'>
+            <ProjectCard 
+                image="/security.png"
+                title="Vehicle Security App"
+                description="Manage your gate access and ensure vehicle safety."
+                skillOne="ReactJs"
+                skillTwo="NextJs"
+                skillThree="TypeScript"
+                linkOne="https://vehicle-security.netlify.app/"
+                linkTwo="https://github.com/AbaniwoM/vehicle-security-app"  
+                text="security"         
+            />
             <ProjectCard 
                 image="/grace.png"
                 title="Great Grace Collections App"

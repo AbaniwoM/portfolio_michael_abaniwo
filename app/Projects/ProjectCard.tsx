@@ -27,11 +27,11 @@ export default function ProjectCard({ title, image, description, skillOne, skill
           height={208} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" 
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-transparent to-transparent opacity-60"></div>
       </div>
       <div className='prjPad p-6 flex flex-col gap-4'>
         <h2 className="text-[1.35rem] font-display font-bold text-slate-100 tracking-tight group-hover:text-emerald-400 transition-colors duration-300">{title}</h2>
-        <p className="text-[0.95rem] text-slate-400 leading-relaxed min-h-[48px]">{description}</p>
+        <p className="text-[0.95rem] text-slate-400 leading-relaxed min-h-12">{description}</p>
         <div className='flex flex-wrap gap-2.5 mt-1'>
           <div className='skillPad text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shadow-inner'>{skillOne}</div>
           <div className='skillPad text-xs font-semibold px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 shadow-inner'>{skillTwo}</div>

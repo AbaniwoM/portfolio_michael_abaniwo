@@ -8,6 +8,7 @@ import typescriptImg from '../../public/typescript.png';
 import tailwindcssImg from '../../public/tailwindcss.png';
 import sanityImg from '../../public/sanity.png';
 import nextImg from '../../public/next.png';
+import pythonImg from '../../public/python.png';
 
 type SkillCircleProps = {
   percentage: number;
@@ -58,10 +59,10 @@ const Technologies = () => {
     <div className='techContent flex p-6 justify-between flex-wrap items-center mt-22 gap-10'>
       <div className='techCenter flex flex-col gap-5'>
         <h2 className='techHeader text-[3rem] font-display font-extrabold text-slate-100 tracking-tight leading-tight'>
-          Technologies I <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">work with</span>
+          Technologies I <span className="bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">work with</span>
         </h2>
         <p className='techText text-[1.1rem] leading-relaxed w-120 text-slate-400'>
-          I work with a number of Technologies namely; ReactJs (NextJs), TypeScript, TailwindCSS, Sanity. These help me to deliver accurate work in specified time.
+          I work with a number of Technologies namely; ReactJs (NextJs), TypeScript, TailwindCSS, Sanity, Python. These help me to deliver accurate work in specified time.
         </p>
       </div>
       <div className='flex flex-col gap-5'>
@@ -104,6 +105,13 @@ const Technologies = () => {
               <Image src={sanityImg} alt='sanity-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
             </div>
             <SkillCircle percentage={80} />
+          </div>
+          {/* Python card */}
+          <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
+            <div className="flex items-center justify-center flex-1 mr-4 h-full">
+              <Image src={pythonImg} alt='python-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
+            </div>
+            <SkillCircle percentage={70} />
           </div>
         </div>
       </div>
