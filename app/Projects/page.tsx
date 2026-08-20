@@ -9,8 +9,14 @@ const Projects = () => {
               Selected <span className="bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Projects</span>
             </h2>
             <p className='techText text-[1.1rem] leading-relaxed w-120 text-slate-400'>
-              Here are some of my latest projects. Carefully built with ReactJs (NextJs), React-vite, Typescript and a number of modern technologies.
+              Here are some of my latest projects. Carefully built with NextJs, React Native, Expo, Firebase, React-vite, Typescript and a number of modern technologies.
             </p>
+        </div>
+        
+        <div className='flex flex-col gap-5 mt-12'>
+            <h3 className='text-[2.2rem] font-display font-bold text-slate-200 tracking-tight'>
+              Web Projects
+            </h3>
         </div>
         <div className='projects flex mt-16 gap-6 overflow-x-auto pb-4 hide-scrollbar'>
             <ProjectCard 
@@ -100,6 +106,38 @@ const Projects = () => {
                 linkOne="https://weigh-now-scale.netlify.app"
                 linkTwo="https://github.com/AbaniwoM/weigh-now-scale"  
                 text="weigh-now-scale"         
+            />
+        </div>
+        
+        <div className='flex flex-col gap-5 mt-20'>
+            <h3 className='text-[2.2rem] font-display font-bold text-slate-200 tracking-tight'>
+              Mobile Projects
+            </h3>
+        </div>
+        <div className='projects flex mt-10 gap-6 overflow-x-auto pb-4 hide-scrollbar'>
+            <ProjectCard 
+                image="/mobile-one.png"
+                title="React Native App"
+                description="A cross-platform mobile application built with React Native and Expo."
+                skillOne="React-Native"
+                skillTwo="Expo"
+                skillThree="Native Wind"
+                skillFour="TypeScript"
+                linkOne="https://res.cloudinary.com/dxcjoih6t/video/upload/v1787184621/2026.08.20_3848_sxtxj1.mp4"
+                linkOneText="Demo Video"
+                text="mobile-one"         
+            />
+            <ProjectCard 
+                image="/mobile-two.png"
+                title="Daily Word & Prayers App"
+                description="Fostering Intimacy with Jesus Christ, Daily. Available on Google Play Store."
+                skillOne="React-Native"
+                skillTwo="Expo"
+                skillThree="Native Wind"
+                skillFour="TypeScript"
+                linkOne="https://play.google.com/store/apps/details?id=com.netlify.appdailywordandprayers"
+                linkOneText="Download App"
+                text="mobile-two"         
             />
         </div>
     </div>

@@ -50,8 +50,8 @@ const Hero = () => {
 
       {/* Glowing profile photo wrapper */}
       <div className="relative mb-10 group cursor-pointer z-10">
-        <div className="w-40 h-40 rounded-full bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-400 blur-2xl absolute -inset-2 opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500"></div>
-        <div className="relative w-[150px] h-[150px] rounded-full p-[2px] bg-gradient-to-tr from-emerald-500 via-teal-400 to-cyan-400 group-hover:scale-102 transition-transform duration-500">
+        <div className="w-40 h-40 rounded-full bg-linear-to-tr from-emerald-500 via-teal-400 to-cyan-400 blur-2xl absolute -inset-2 opacity-50 group-hover:opacity-75 group-hover:scale-105 transition-all duration-500"></div>
+        <div className="relative w-[150px] h-[150px] rounded-full p-0.5 bg-linear-to-tr from-emerald-500 via-teal-400 to-cyan-400 group-hover:scale-102 transition-transform duration-500">
           <Image
             src="/mike.jpeg"
             alt="Profile Picture"
@@ -63,11 +63,11 @@ const Hero = () => {
       </div>
 
       <h1 className="heroText text-5xl md:text-7xl font-display font-extrabold tracking-tight leading-tight z-10">
-        I&apos;m a <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">web developer</span>
+        I&apos;m a <span className="bg-linear-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Software Engineer</span>
         <br />
         specialized in
         <br />
-        <span className="inline-block relative text-emerald-400 after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-emerald-400 after:to-teal-400 after:rounded-full">ReactJs (NextJs)</span>.
+        <span className="inline-block relative text-emerald-400 after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-emerald-400 after:to-teal-400 after:rounded-full">NextJs, React Native, NodeJs</span>.
       </h1>
     </div>
   );

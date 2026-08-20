@@ -3,12 +3,14 @@
 import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
-import reactImg from '../../public/reactjs.png';
 import typescriptImg from '../../public/typescript.png';
 import tailwindcssImg from '../../public/tailwindcss.png';
 import sanityImg from '../../public/sanity.png';
 import nextImg from '../../public/next.png';
+import reactNativeImg from '../../public/react-native-logo.png';
 import pythonImg from '../../public/python.png';
+import fireBaseImg from '../../public/firebase-logo.png';
+import expoImg from '../../public/expo-logo.png';
 
 type SkillCircleProps = {
   percentage: number;
@@ -67,19 +69,35 @@ const Technologies = () => {
       </div>
       <div className='flex flex-col gap-5'>
         <div className='flex gap-5'>
-          {/* React card */}
-          <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
-            <div className="flex items-center justify-center flex-1 mr-4 h-full">
-              <Image src={reactImg} alt='react-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
-            </div>
-            <SkillCircle percentage={92} />
-          </div>
           {/* Next.js card */}
           <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
             <div className="flex items-center justify-center flex-1 mr-4 h-full">
               <Image src={nextImg} alt='next-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
             </div>
             <SkillCircle percentage={90} />
+          </div>
+          {/* React Native card */}
+          <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
+            <div className="flex items-center justify-center flex-1 mr-4 h-full">
+              <Image src={reactNativeImg} alt='react-native-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
+            </div>
+            <SkillCircle percentage={80} />
+          </div>
+        </div>
+        <div className='flex gap-5'>
+          {/* NodeJs card */}
+          <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
+            <div className="flex items-center justify-center flex-1 mr-4 h-full">
+              <Image src={expoImg} alt='node-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
+            </div>
+            <SkillCircle percentage={80} />
+          </div>
+          {/* Firebase card */}
+          <div className="techImage w-68 h-32 bg-slate-900/30 backdrop-blur-sm border border-slate-800/60 rounded-2xl flex items-center justify-between p-5 transition-all duration-300 hover:scale-105 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/5 group">
+            <div className="flex items-center justify-center flex-1 mr-4 h-full">
+              <Image src={fireBaseImg} alt='fire-base-img' className='max-h-full w-auto object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300' />
+            </div>
+            <SkillCircle percentage={80} />
           </div>
         </div>
         <div className='flex gap-5'>

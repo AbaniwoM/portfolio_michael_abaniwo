@@ -68,8 +68,8 @@ const About = () => {
           
           {/* Left Column: Interactive Video Preview Cover */}
           <div className="md:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[380px] aspect-[4/5] rounded-3xl overflow-hidden group border border-slate-800/80 shadow-2xl">
-              <div className="absolute -inset-1.5 bg-gradient-to-tr from-emerald-500/30 via-teal-500/20 to-cyan-500/30 rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
+            <div className="relative w-full max-w-[380px] aspect-4/5 rounded-3xl overflow-hidden group border border-slate-800/80 shadow-2xl">
+              <div className="absolute -inset-1.5 bg-linear-to-tr from-emerald-500/30 via-teal-500/20 to-cyan-500/30 rounded-3xl blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
               
               <div className="relative w-full h-full rounded-3xl overflow-hidden bg-slate-900">
                 <Image
@@ -78,7 +78,7 @@ const About = () => {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
                 
                 <button 
                   onClick={openModal}
@@ -107,7 +107,7 @@ const About = () => {
             
             <p className="text-[1.1rem] leading-relaxed text-slate-400 max-w-xl">
               I am a dedicated and results-driven software engineer specializing in building premium web applications. 
-              With a deep focus on ReactJs (NextJs), TypeScript, and custom styling systems, I help client businesses craft 
+              With a deep focus on NextJs, React Native, NodeJs, TypeScript, and custom styling systems, I help client businesses craft 
               responsive, high-performance, and pixel-perfect visual experiences.
             </p>
             
@@ -124,8 +124,8 @@ const About = () => {
                 Let&apos;s Build Together
               </a>
               <a
-                href="/RESUME-MICHAEL ABANIWO.pdf"
-                download="RESUME-MICHAEL ABANIWO.pdf"
+                href="/MICHAEL-ABANIWO-Resume.pdf"
+                download="MICHAEL-ABANIWO-Resume.pdf"
                 className="px-6 py-3.5 font-bold text-slate-200 border border-slate-800 hover:border-emerald-500/40 hover:bg-emerald-500/5 rounded-xl transition-all duration-300 text-sm flex items-center gap-2 cursor-pointer"
               >
                 <FaDownload className="text-xs" /> Download CV
